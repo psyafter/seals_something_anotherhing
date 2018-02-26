@@ -95,11 +95,24 @@
     <!--
         Location
       -->
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>android.hardware.gnss</name>
         <version>1.0</version>
         <interface>
             <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal-->
+
+    <!--
+        Sensors
+      -->
+    <hal format="hidl">
+        <name>android.hardware.sensors</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensors</name>
             <instance>default</instance>
         </interface>
     </hal>
